@@ -6,13 +6,13 @@
 <h2>Report</h2>
 <div class="list list-inset">
 		<div class="item item-input">
-			<input type="text" placeholder="Lat Long eg: 35.342, 23.2342" ng-model="geolocation"/>
+			<input type="text" placeholder="Lat Long eg: 35.342, 23.2342" ng-model="report.geolocation"/>
 		</input>
 		<button class="button button-icon icon ion-navigate" ng-click="getLocation()"></button>
 	</div>
 	
 	<label class="item item-input">
-		<textarea placeholder="Please enter your report" ng-model="report"></textarea>
+		<textarea placeholder="Please enter your report" ng-model="report.content"></textarea>
 	</label>
 <p><button class="button button-balanced" ng-click="submitReport()">
 	Submit  
