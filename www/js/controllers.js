@@ -14,7 +14,7 @@ angular.module('starter.controllers', [])
 .controller('WhatCtrl', function($scope, $stateParams) {
   console.log($stateParams)
 
-  $scope.what = $stateParams.playlistId;
+  $scope.what = $stateParams.whatId;
 })
 
 
@@ -27,5 +27,9 @@ angular.module('starter.controllers', [])
 })
 
 .controller('SocialCtrl', function($scope) {
+  
+})
+
+.controller('ReportCtrl', function($scope) {
   
 });
