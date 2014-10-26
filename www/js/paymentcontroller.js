@@ -1,5 +1,7 @@
 angular.module("starter.controllers")
-.controller("PaymentCtrl", function ($scope, $rootScope, $timeout, $state, $ionicLoading, $ionicPopup) {
+.controller("PaymentCtrl", function ($scope, $rootScope, $timeout, $state, $ionicLoading, $ionicPopup, $stateParams) {
+    $scope.selectedPartner = $stateParams.name;
+
     var launchPingitApp = function () {
         document.location = "pingit://00/07985222260";
     };

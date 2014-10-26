@@ -71,7 +71,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngCordova', 'firebas
     })
 
     .state('app.payment', {
-      url: "/payment",
+      url: "/payment/:name",
       views: {
         'menuContent' :{
           templateUrl: "templates/payment.html",
