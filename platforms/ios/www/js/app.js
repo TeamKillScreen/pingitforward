@@ -70,6 +70,16 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       }
     })
 
+    .state('app.who-local', {
+      url: "/who-local",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/who-local.html",
+          controller: 'WhoLocalCtrl'
+        }
+      }
+    })
+
     .state('app.payment', {
       url: "/payment",
       views: {

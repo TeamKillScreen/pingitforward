@@ -2,10 +2,19 @@
   <ion-nav-buttons side="left">
     <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
   </ion-nav-buttons>
+  <ion-tabs class="tabs-icon-top tabs-positive">
+
+        <ion-tab title="Local" icon="ion-location" href="#/app/who-local">
+          <ion-nav-view name="local-tab"></ion-nav-view>
+        </ion-tab>
+
+        <ion-tab title="National" icon="ion-ios7-world" ui-sref="tabs.contact">
+          <ion-nav-view name="contact-tab"></ion-nav-view>
+        </ion-tab>
+
+  </ion-tabs>
   <ion-content class="has-header">
-  <h2>Who?</h2>
-  <a class="button" ui-sref="app.payment">
-	  Next
-	</a>
+	  <h2>Who?</h2>
+	  <a class="button" ui-sref="app.payment">Next</a>
   </ion-content>
 </ion-view>

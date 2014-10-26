@@ -3,9 +3,14 @@
     <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
   </ion-nav-buttons>
   <ion-content class="has-header">
-  <h2>Who?</h2>
-  <a class="button" ui-sref="app.payment">
-	  Next
-	</a>
+	  <h2>Who?</h2>
+	  <div class="button-bar">
+		  <button class="button button-royal icon-left ion-ios7-location" ng-click="loadPartners('local')">Local</button>
+		  <button class="button button-royal icon-left ion-ios7-world" ng-click="loadPartners('national')">National</button>
+		</div>
+		<ul>
+			<li ng-repeat="partner in partnersList">{{ partner.name }}</li>
+		</ul>
+	  <a class="button" ui-sref="app.payment">Next</a>
   </ion-content>
 </ion-view>

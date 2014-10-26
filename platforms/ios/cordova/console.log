@@ -14,3 +14,13 @@
 2014-10-26 01:46:27.836 app[10958:798715] [CDVTimer][TotalPluginStartup] 0.344992ms
 2014-10-26 01:46:27.997 app[10958:798715] Resetting plugins due to page load.
 2014-10-26 01:46:28.282 app[10958:798715] Finished load of: file:///Users/alangorton/Library/Developer/CoreSimulator/Devices/573A7BCD-775E-4BBB-AADD-19DF3B4D7388/data/Containers/Bundle/Application/D67E81D5-4A90-49FD-BB7E-73EDB99D7DF7/app.app/www/index.html#/app/home
+2014-10-26 03:25:55.675 app[6958:1497225] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/julianmonono/Library/Developer/CoreSimulator/Devices/7B9F04D8-BBB1-41FB-AF4B-0347EF3ACAA3/data/Containers/Data/Application/CEF5DC0A-9A3D-45F1-8720-0D432A7900BC/Library/Cookies/Cookies.binarycookies
+2014-10-26 03:25:55.836 app[6958:1497225] Apache Cordova native platform version 3.6.3 is starting.
+2014-10-26 03:25:55.837 app[6958:1497225] Multi-tasking -> Device: YES, App: YES
+2014-10-26 03:25:55.851 app[6958:1497225] Unlimited access to network resources
+2014-10-26 03:25:56.711 app[6958:1497225] [CDVTimer][keyboard] 0.108004ms
+2014-10-26 03:25:56.711 app[6958:1497225] [CDVTimer][TotalPluginStartup] 0.514030ms
+2014-10-26 03:25:58.192 app[6958:1497225] Resetting plugins due to page load.
+2014-10-26 03:25:58.623 app[6958:1497225] Finished load of: file:///Users/julianmonono/Library/Developer/CoreSimulator/Devices/7B9F04D8-BBB1-41FB-AF4B-0347EF3ACAA3/data/Containers/Bundle/Application/15DC1552-5D2A-4B5E-9A3E-A12C8365CE4C/app.app/www/index.html#/app/home
+2014-10-26 03:26:04.302 app[6958:1497225] {"whatId":"Clothes"}
+2014-10-26 03:26:04.302 app[6958:1497225] {"what":"Clothes"}
