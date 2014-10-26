@@ -33,16 +33,16 @@ angular.module('starter.controllers', [])
   };
 })
 
-.controller('PlaylistsCtrl', function($scope) {
+.controller('WhatListsCtrl', function($scope) {
   $scope.playlists = [
-    { title: 'Reggae', id: 1 },
-    { title: 'Chill', id: 2 },
-    { title: 'Dubstep', id: 3 },
-    { title: 'Indie', id: 4 },
-    { title: 'Rap', id: 5 },
-    { title: 'Cowbell', id: 6 }
+    { title: 'Clothes', id: "Clothes" },
+    { title: 'Shelter', id: "Shelter" },
+    { title: 'Food', id: "Food" }
   ];
 })
 
-.controller('PlaylistCtrl', function($scope, $stateParams) {
+.controller('WhatCtrl', function($scope, $stateParams) {
+  console.log($stateParams)
+
+  $scope.what = $stateParams.playlistId;
 });
