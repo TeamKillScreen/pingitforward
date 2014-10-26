@@ -30,43 +30,76 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       controller: 'AppCtrl'
     })
 
-    .state('app.search', {
-      url: "/search",
+    .state('app.home', {
+      url: "/home",
       views: {
         'menuContent' :{
-          templateUrl: "templates/search.html"
+          templateUrl: "templates/home.html",
+          controller: 'AppCtrl'
         }
       }
     })
 
-    .state('app.browse', {
-      url: "/browse",
+    .state('app.whatlist', {
+      url: "/what",
       views: {
         'menuContent' :{
-          templateUrl: "templates/browse.html"
-        }
-      }
-    })
-    .state('app.playlists', {
-      url: "/playlists",
-      views: {
-        'menuContent' :{
-          templateUrl: "templates/playlists.html",
-          controller: 'PlaylistsCtrl'
+          templateUrl: "templates/whatlist.html",
+          controller: 'WhatListsCtrl'
         }
       }
     })
 
-    .state('app.single', {
-      url: "/playlists/:playlistId",
+    .state('app.report', {
+      url: "/report",
       views: {
         'menuContent' :{
-          templateUrl: "templates/playlist.html",
-          controller: 'PlaylistCtrl'
+          templateUrl: "templates/report.html",
+          controller: 'ReportCtrl'
+        }
+      }
+    })
+
+    .state('app.who', {
+      url: "/who",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/who.html",
+          controller: 'WhoCtrl'
+        }
+      }
+    })
+
+    .state('app.payment', {
+      url: "/payment",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/payment.html",
+          controller: 'PaymentCtrl'
+        }
+      }
+    })
+
+    .state('app.social', {
+      url: "/social",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/social.html",
+          controller: 'SocialCtrl'
+        }
+      }
+    })
+
+    .state('app.what', {
+      url: "/what/:whatId",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/what.html",
+          controller: 'WhatCtrl'
         }
       }
     });
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/playlists');
+  $urlRouterProvider.otherwise('/app/home');
 });
 
