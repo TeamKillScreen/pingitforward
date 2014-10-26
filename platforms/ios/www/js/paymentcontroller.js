@@ -1,9 +1,7 @@
 angular.module("starter.controllers")
 .controller("PaymentCtrl", function ($scope, $rootScope, $timeout, $state, $ionicLoading, $ionicPopup) {
     var launchPingitApp = function () {
-        $scope.showPingit = function () {
-            document.location = "pingit://00/07985222260";
-        };
+        document.location = "pingit://00/07985222260";
     };
 
     var showThankyouMessage = function () {
@@ -27,10 +25,10 @@ angular.module("starter.controllers")
     };
 
     $scope.pingit = function () {
-        if ($rootScope !== "Clothing") {
-            launchPingitApp();
-        } else {
+        if ($rootScope.what === "Clothes") {
             fakePingitApi();
+        } else {
+            launchPingitApp();
         }
     };
 
