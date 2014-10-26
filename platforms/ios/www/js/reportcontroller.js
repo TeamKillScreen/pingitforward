@@ -1,5 +1,4 @@
 angular.module('starter.controllers')
-<<<<<<< HEAD
 .controller('ReportCtrl', function($scope, $cordovaGeolocation) {
 
 $scope.run = "no it did not";
@@ -24,8 +23,4 @@ $scope.geolocation = "";
 
 		$scope.run = "yes it did"
 	};
-=======
-.controller('ReportCtrl', function($scope) {
-  
->>>>>>> 116bedb1fbb3be85aa8a2f08c5c99c72e1b16ba5
 });

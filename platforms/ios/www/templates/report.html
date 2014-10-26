@@ -1,31 +1,22 @@
 <ion-view title="Pingit Forward">
-  <ion-nav-buttons side="left">
-    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
-  </ion-nav-buttons>
-  <ion-content class="has-header">
-  <h2>Report</h2>
-<<<<<<< HEAD
-  <div class="list list-inset">
-  	<div class="item item-input-inset">
-  		<span class="input-label">Location</span>
-  <label class="item-input-wrapper">
-  	<input type="text" placeholder="Lat Long eg: 35.342, 23.2342" ng-model="geolocation"/>
-
-  </input>
-  </label>
-  <button class="button button-icon icon ion-navigate" ng-click="getLocation()"></button>
-</div>
-<div class="item item-input-inset">
-	<span class="input-label">Report</span>
-<label class="item-input">
-    <textarea placeholder="Please enter your report"></textarea>
-  </label>
+<ion-nav-buttons side="left">
+<button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+</ion-nav-buttons>
+<ion-content class="has-header">
+<h2>Report</h2>
+<div class="list list-inset">
+		<div class="item item-input">
+			<input type="text" placeholder="Lat Long eg: 35.342, 23.2342" ng-model="geolocation"/>
+		</input>
+		<button class="button button-icon icon ion-navigate" ng-click="getLocation()"></button>
 	</div>
-  <button class="button button-balanced">
+	
+	<label class="item item-input">
+		<textarea placeholder="Please enter your report"></textarea>
+	</label>
+<button class="button button-balanced">
 	Submit  
 </button>
 </div>
-=======
->>>>>>> 116bedb1fbb3be85aa8a2f08c5c99c72e1b16ba5
-  </ion-content>
+</ion-content>
 </ion-view>
