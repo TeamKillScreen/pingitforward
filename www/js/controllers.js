@@ -19,5 +19,13 @@ angular.module('starter.controllers', [])
 
 
 .controller('WhoCtrl', function($scope) {
+
+})
+
+.controller('PaymentCtrl', function($scope) {
+  
+})
+
+.controller('SocialCtrl', function($scope) {
   
 });

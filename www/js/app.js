@@ -50,6 +50,26 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       }
     })
 
+    .state('app.payment', {
+      url: "/payment",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/payment.html",
+          controller: 'PaymentCtrl'
+        }
+      }
+    })
+
+    .state('app.social', {
+      url: "/social",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/social.html",
+          controller: 'SocialCtrl'
+        }
+      }
+    })
+
     .state('app.what', {
       url: "/what/:playlistId",
       views: {
