@@ -4,6 +4,7 @@ angular.module('starter.controllers')
 $scope.run = "no it did not";
 $scope.geopoint = {};
 $scope.geolocation = "";
+$scope.report = "";
 
 	$scope.getLocation = function () {
 		var win = function (position) {
@@ -22,5 +23,9 @@ $scope.geolocation = "";
 		.then(win, fail);
 
 		$scope.run = "yes it did"
+	};
+
+	$scope.submitReport = function() {
+		
 	};
 });
