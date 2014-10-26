@@ -50,11 +50,11 @@ angular.module("starter.controllers")
     };
 
     $scope.pingit = function () {
-        if ($rootScope.what.what === "Food") {
-            launchPingitApp();
-        } else {
+        //if ($rootScope.what.what === "Food") {
+        //    launchPingitApp();
+        //} else {
             fakePingitApi();
-        }
+        //}
     };
 
     $scope.goHome = function () {
