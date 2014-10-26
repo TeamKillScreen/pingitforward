@@ -41,6 +41,8 @@
 		63BC3209EBDE41229F4159AD /* UIWebViewExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F14D007EB594956B7569DF1 /* UIWebViewExtension.m */; };
 		6B134D0BDED7408F9A086F7B /* CDVLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 1504AAC05A7541B5A8C0E53B /* CDVLogger.m */; };
 		799871074CD443B5A316C276 /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = B5FD318357B7417587B6366D /* CDVDevice.m */; };
+		5338142603BB484181994CDA /* CDVLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A0B6F2A0AB4EF7A043413A /* CDVLocation.m */; };
+		9609A197CA92415093C9DDE5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044A70B4F162411A943B90F3 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +114,9 @@
 		2F17E7512BD84FC7BB452DCD /* CDVLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVLogger.h"; path = "org.apache.cordova.console/CDVLogger.h"; sourceTree = "<group>"; fileEncoding = 4; };
 		B5FD318357B7417587B6366D /* CDVDevice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVDevice.m"; path = "org.apache.cordova.device/CDVDevice.m"; sourceTree = "<group>"; fileEncoding = 4; };
 		582AA43D196341A484ABBB94 /* CDVDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVDevice.h"; path = "org.apache.cordova.device/CDVDevice.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		48A0B6F2A0AB4EF7A043413A /* CDVLocation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVLocation.m"; path = "org.apache.cordova.geolocation/CDVLocation.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		8ABE86B05CC64AD8A315EF3E /* CDVLocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVLocation.h"; path = "org.apache.cordova.geolocation/CDVLocation.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		044A70B4F162411A943B90F3 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreLocation.framework"; path = "System/Library/Frameworks/CoreLocation.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +128,7 @@
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
 				305D5FD1115AB8F900A74A75 /* MobileCoreServices.framework in Frameworks */,
+				9609A197CA92415093C9DDE5 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,6 +221,7 @@
 				5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */,
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
 				305D5FD0115AB8F900A74A75 /* MobileCoreServices.framework */,
+				044A70B4F162411A943B90F3 /* CoreLocation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -238,6 +245,8 @@
 				2F17E7512BD84FC7BB452DCD /* CDVLogger.h */,
 				B5FD318357B7417587B6366D /* CDVDevice.m */,
 				582AA43D196341A484ABBB94 /* CDVDevice.h */,
+				48A0B6F2A0AB4EF7A043413A /* CDVLocation.m */,
+				8ABE86B05CC64AD8A315EF3E /* CDVLocation.h */,
 			);
 			name = Plugins;
 			path = "app/Plugins";
@@ -436,6 +445,7 @@
 				63BC3209EBDE41229F4159AD /* UIWebViewExtension.m in Sources */,
 				6B134D0BDED7408F9A086F7B /* CDVLogger.m in Sources */,
 				799871074CD443B5A316C276 /* CDVDevice.m in Sources */,
+				5338142603BB484181994CDA /* CDVLocation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
