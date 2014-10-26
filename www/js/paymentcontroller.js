@@ -21,7 +21,7 @@ angular.module("starter.controllers")
 
         var transaction = {};
         transaction.amount = 0;
-        transaction.partner = "11e2d3d9-cd1c-4a5c-9444-4358e4676046"; //Barnabus
+        transaction.partner = $scope.selectedPartner; //Barnabus
         transaction.user = "048b3369-6047-4184-8af3-129101bd8fa5"; //Teamkillscreen
 
         if($rootScope.what.what === "Clothes")

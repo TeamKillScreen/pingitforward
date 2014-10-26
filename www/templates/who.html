@@ -8,7 +8,7 @@
 		  <button class="button button-royal icon-left ion-ios7-location" ng-click="loadPartners('local')">Local</button>
 		  <button class="button button-royal icon-left ion-ios7-world" ng-click="loadPartners('national')">National</button>
 		</div>
-		<ion-item ng-repeat="partner in partnersList" href="#/app/payment/{{partner.name}}">
+		<ion-item ng-repeat="partner in partnersList" href="#/app/payment/{{partner.id}}">
 			<button class="button button-block button-calm">{{ partner.name }}</button>
 		</ion-item>
   </ion-content>

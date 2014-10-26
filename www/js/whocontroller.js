@@ -15,6 +15,7 @@ angular.module('starter.controllers')
 	    partnerRecords.$loaded()
 	    				.then(function () {
 	    						$scope.partnersList = partnerRecords;
+	    						console.log(partnerRecords);
 	    						});
 	    					};
 	});
