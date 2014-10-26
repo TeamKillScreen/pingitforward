@@ -15,4 +15,9 @@ angular.module('starter.controllers', [])
   console.log($stateParams)
 
   $scope.what = $stateParams.playlistId;
+})
+
+
+.controller('WhoCtrl', function($scope) {
+  
 });

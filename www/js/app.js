@@ -40,6 +40,16 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       }
     })
 
+    .state('app.who', {
+      url: "/who",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/who.html",
+          controller: 'WhoCtrl'
+        }
+      }
+    })
+
     .state('app.what', {
       url: "/what/:playlistId",
       views: {
