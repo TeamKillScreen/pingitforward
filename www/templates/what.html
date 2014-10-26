@@ -1,9 +1,36 @@
 <ion-view title="Pingit Forward">
   <ion-content class="has-header">
-    <h1>What?</h1>
-    <p>{{ what }}</p>
-    <a class="button" ui-sref="app.who">
-	  Next
-	</a>
+    <h1>Give</h1>
+    <p>You have chosen to donate a gift of {{ what }}. <strong>Thank you</strong>.
+    {{ vm.narrative }}</p>
+    
+    <div style="display: display-block; float: left">
+	    <div id="coffeeWrapper" style="display: display-block">
+	    	<div ng-repeat="coffee in vm.coffees" class="icon-left ion-coffee" style="float: left; font-size: xx-large"></div>
+	         <!-- <div class="icon-left ion-coffee" style="float: left; font-size: xx-large"></div>
+	         <div class="icon-left ion-coffee" style="float: left; font-size: xx-large"></div>
+	         <div class="icon-left ion-coffee" style="float: left; font-size: xx-large"></div>
+	         <div class="icon-left ion-coffee" style="float: left; font-size: xx-large"></div> -->
+	    </div>
+	    <div id="beerWrapper" style="display: display-block">
+	    	<div ng-repeat="beer in vm.beers" class="icon-left ion-beer" style="float: left; font-size: xx-large"></div>
+	         <!-- <div class="icon-left ion-beer" style="float: left; font-size: xx-large"></div>
+	         <div class="icon-left ion-beer" style="float: left; font-size: xx-large"></div>
+	         <div class="icon-left ion-beer" style="float: left; font-size: xx-large"></div>
+	         <div class="icon-left ion-beer" style="float: left; font-size: xx-large"></div> -->
+	    </div>
+	    <div id="magWrapper" style="display: display-block">
+	    	<div ng-repeat="mag in vm.mags" class="icon-left ion-coffee" style="float: left; font-size: xx-large"></div>
+	         <!-- <div class="icon-left ion-ios7-paper" style="float: left; font-size: xx-large"></div>
+	         <div class="icon-left ion-ios7-paper" style="float: left; font-size: xx-large"></div>
+	         <div class="icon-left ion-ios7-paper" style="float: left; font-size: xx-large"></div>
+	         <div class="icon-left ion-ios7-paper" style="float: left; font-size: xx-large"></div> -->
+	    </div>
+	    <div style="display: display-block">
+	    	 <a class="button" ui-sref="app.who">
+			   Choose a partner
+			 </a>
+	    </div>
+    </div>    
   </ion-content>
 </ion-view>
